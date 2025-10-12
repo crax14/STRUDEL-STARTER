@@ -1,0 +1,95 @@
+//"BASIC STARTING TEMPLATE" @by jake sundy
+//title all your tracks like this^^^^^^
+
+
+/* 
+ DISCLAIMER: I am no strudel expert.
+             For more technical things I advice watching switch angel's videos
+             and checkings the strudel docs and discord
+
+             Before using this template I HIGHLY recommend 
+             going through the strudel tutorials: https://strudel.cc/workshop/getting-started/
+             They are very easy to understand and don't take long. 
+
+             This template is just a start and 
+             explains some of my approach to live coding. 
+             That said I often start completely from scratch. 
+             Take what you like, leave what you don't
+*/
+
+//------sets bpm--------
+//if you want to throw the tempo on a slider, 
+// you can't throw that in here. You can .cpm() on each element. 
+// the tempo does not change very smooth though. 
+setcpm(166/4)
+
+
+//I usually define my drumkit and key here:
+const kit = "rolandtr909"
+const key = "A:major"
+/*
+I often give myself an array of patterns to quickly switch between
+this is helpful for making changes quickly. 
+I like to lay it out like: [~ ~ ~ ~] [~ ~ ~ ~] [~ ~ ~ ~] [~ ~ ~ ~]
+even though its more typing, it helps me take rhythms 
+from my brain to code easier. 
+Each ~ would be a 16th note in this scenario 
+but you can divide it up however you want.
+*/
+const kicks = [
+  "x!2",
+  "x!4",
+  "[x ~ ~ ~] [x ~ ~ ~] [x ~ ~ x] [~ ~ x ~]",
+  "[x ~ ~ x] [~ ~ x ~] [x ~ ~ x] [~ ~ x ~]",
+  //use <> if you want something to change every other bar/cycle
+  "[x ~ ~ ~] [x ~ ~ <x ~>] [x ~ ~ x] [~ ~ x ~]",
+  // You can use <> with @ to make something change ever n bars/cycles
+  "[x ~ ~ ~] [x ~ ~ <x@3 ~>] [x ~ ~ x] [~ ~ x ~]"//x@3 for 3 bars, ~ for onTriggerTime
+]
+
+const snares = [
+  "[~ x]", //halftime
+  "[~ x]*2", 
+  "[~ ~ ~ ~] [~ ~ ~ x] [~ ~ ~ ~] [x ~ ~ ~]2", 
+]
+
+const hats = [
+  "x!8",
+  "x!16",
+  "[~ x]*4"//offbeats
+]
+
+//these variables help us change things quickly:
+//CHANGE THESE AS U GO:::::::::
+var kick = 0; 
+var sn = 0;
+var hh = 0;
+
+
+//best to mute things like: _$drums:
+_$drums: stack(
+  s("bd").struct(kicks[kick]),
+  s("sd").struct(snares[sn])
+  //good ways to change drums sounds I like:
+ //.speed(1.5)//changes speed and pitch
+ // .crush(2)//bit crush, chose an integer between 2-6 for most effect
+  ,
+  s("hh").struct(hats[hh]).gain("[0.1 0.8]*2")//sidechain like effect,change the constant on the right
+)//put fx on all drums here<---->
+//.room(slider(0, 0, 1))
+//.crush(3)
+//.vib(2)
+
+_$bass: n("<0 5 1 4>/2".sub(14)).scale(key).s("square").struct("x!8")
+//use n if u want 0 to always be the root
+
+_$keys: n("<0 5 1 4>/2".add("[0, 2, 4, 6]"))//easy way to do chords that wrap to roots
+.scale(key).s("sine").struct("<[x ~ x ~] [~ ~ ~ x] [~ x ~ x] [~ ~ ~ ~]>*2").gain(0.5)
+.adsr("0:.1:0:0").delay(0.5)
+
+
+////LET ME KNOW IF YOU WANT MORE
+
+
+
+
